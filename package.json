@@ -1,12 +1,13 @@
 {
   "name": "@kamyu/nfc2card",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Konmai Card NFC ID Encoder/Decoder",
   "main": "dist/index.js",
   "scripts": {
     "prepare": "husky install",
     "build": "tsc",
-    "lint": "eslint src/**/*.ts"
+    "lint": "eslint src/**/*.ts",
+    "prepublish": "npm run build"
   },
   "keywords": [],
   "author": "Byeon Seongun <kamyu@kamyu.me>",
