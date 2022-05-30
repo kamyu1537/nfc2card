@@ -826,9 +826,6 @@ const __decode = (inInt64s: BigInteger[]): BigInteger[] => {
   const inp = inInt64s;
   let out = new Array(8).fill(bigInt(0));
 
-  console.info(__operatorB(bigInt('0x40'), __toInt64(inp)));
-  console.info(__operatorA(bigInt('0x20'), __toInt64(out)));
-
   out = __fromInt64(out, __operatorB(bigInt('0x40'), __toInt64(inp)));
   out = __fromInt64(out, __operatorA(bigInt('0x20'), __toInt64(out)));
   out = __fromInt64(out, __operatorB(bigInt('0x00'), __toInt64(out)));
