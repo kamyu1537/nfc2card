@@ -29,5 +29,8 @@
     "src/**/*.ts": [
       "eslint --fix"
     ]
+  },
+  "dependencies": {
+    "big-integer": "^1.6.51"
   }
 }
